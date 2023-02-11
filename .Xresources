@@ -1,0 +1,73 @@
+!!ColorScheme
+! special
+*.foreground:   #ab9bab
+*.background:   #1b181b
+*.cursorColor:  #ab9bab
+
+! black
+*.color0:       #1b181b
+*.color8:       #776977
+
+! red
+*.color1:       #ca402b
+*.color9:       #ca402b
+
+! green
+*.color2:       #379a37
+*.color10:      #379a37
+
+! yellow
+*.color3:       #bb8a35
+*.color11:      #bb8a35
+
+! blue
+*.color4:       #516aec
+*.color12:      #516aec
+
+! magenta
+*.color5:       #7b59c0
+*.color13:      #7b59c0
+
+! cyan
+*.color6:       #159393
+*.color14:      #159393
+
+! white
+*.color7:       #ab9bab
+*.color15:      #f7f3f7
+
+!Background and Cursor
+URxvt.depth: 32
+URxvt.background: [80] # 000000
+URxvt.foreground: # 699000
+URxvt.cursorColor: # 699000
+URxvt.cursorBlink: true
+
+
+!! - Window appearance
+! | - We specify the title of the window, by default, urxvt
+URxvt.title: Console
+! | - We add a custom icon, which must be in the address we specify
+URxvt.iconFile: /usr/share/icons/consola.svg
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+
+
+!!Extensions
+URxvt.perl-lib: /home/nick/.URvxt/ext
+URxvt.perl-ext-common: default, font-size
+
+!font-size
+URxvt.keysym.C-minus:  resize-font:smaller
+URxvt.keysym.C-plus:   resize-font:bigger
+URxvt.keysym.C-equal:  resize-font:equal
+
+!!Fonts
+URxvt.font:xft:Noto Sans Mono:style=Normal:antialias=true:size=5:minspace=False
+
+URxvt.boldFont:xft:Noto Sans Mono:style=Bold:antialias=true:size=5:minspace=False
+
+! | - If there is separation between characters add, where -1 is the number of pixels to decrease
+!URxvt.letterSpace: -1
+
+
